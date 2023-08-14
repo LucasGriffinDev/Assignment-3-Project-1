@@ -1,0 +1,33 @@
+:root {
+    --color1: #E6C053;
+    --color2: #D33CE6;
+    --color3: #25E6B2;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    table {
+        width: 100%;
+        overflow-x: auto; /* Allows horizontal scrolling if the table is too wide */
+    }
+    
+    th, td {
+        padding: 8px;
+        text-align: center;
+        font-size: 12px; /* Reducing font size for mobile */
+    }
+    
+    th {
+        background-color: #f2f2f2;
+    }
+    
+    /* Optional: Stacking the navigation menu vertically */
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        text-align: center;
+    }
+}
