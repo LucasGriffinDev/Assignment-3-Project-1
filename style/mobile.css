@@ -1,19 +1,20 @@
 :root {
-    --color1: #E6C053;
-    --color2: #D33CE6;
-    --color3: #25E6B2;
+    --color1: #212529; /* Dark Grey - For text and header */
+    --color2: #f8f9fa; /* Light Grey - For background */
+    --color3: #007bff; /* Blue - For accent */
 }
-
 /* General Styles */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Open Sans', sans-serixf;
     background-color: var(--color2);
     color: var(--color1); /* General text color */
+
 }
 
 main {
-    margin-top: 4em;
+margin-top: 4em;
+    padding: 2em;
 }
 
 /* Primary Color: Headings */
@@ -21,38 +22,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color3);
 }
 
-
-.center-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-
-.big-button {
-    padding: 20px 40px;
-    font-size: 20px;
-    text-decoration: none;
-    background-color: var(--color3);
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.big-button:hover {
-    background-color: var(--color1);
-}
-
-.fade-in {
-    opacity: 0;
-    animation: fadeIn ease 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
 
 
 /* navbar */
@@ -124,12 +93,60 @@ nav ul li a:hover {
     background-color: #575757;
 }
 
+/* home page style */
+
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em auto;
+}
+
+.big-button {
+    padding: 20px 40px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: var(--color3);
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.big-button:hover {
+    background-color: var(--color1);
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
 
 /* about me page */
 
-main {
+aside {
+    position: fixed;
+    right: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    border-radius: 1.5em;
+    background-color: var(--color1);
+    color: var(--color2);
     padding: 2em;
 }
+
+
 
 /* table */
 
@@ -154,6 +171,13 @@ th, td {
 
 th {
     background-color: #f2f2f2;
+    color: var(--color3);
+}
+
+td:first-child {
+    color: var(--color3);
+    background-color: #f9f9f9; /* Example: light grey background */
+    font-weight: bold; /* Example: make the text bold */
 }
 
 /* Style for the first column to make it fixed */
@@ -183,3 +207,71 @@ img {
     border-radius: 50%;
     border: var(--color3) dotted 4px;
  }
+
+ img:hover {
+    animation: rotate 1s linear infinite;
+}
+
+
+/* form */
+
+.form-container {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding:20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  
+form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+  
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    resize: vertical;
+    margin: 5px 0;
+  }
+  
+textarea {
+    height: 100px;
+  }
+  
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+

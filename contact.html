@@ -23,10 +23,16 @@
         </div>
     </header>
     <main>
-        <img src="./images/lucas.jpg" alt="Lucas Griffin headshot" class="headshot">
-
-        <div class="center-button">
-            <a href="aboutme.html" class="big-button">Click to begin!</a>
+        <div class="form-container">
+            <form action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php" method="post">
+                <label for="name">Name:</label>
+                <input required type="text" id="name" name="name" placeholder="Enter your name here">
+                <label for="email">Email:</label>
+                <input required type="email" id="email" name="email" placeholder="Enter your email here">
+                <label for="message">Message:</label>
+                <textarea required id="message" name="message" placeholder="Enter your message here"></textarea>
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </main>
 </body>
