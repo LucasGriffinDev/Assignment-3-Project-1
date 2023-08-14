@@ -79,7 +79,7 @@ nav ul {
 }
 
 nav ul li {
-    padding: 15px 0;
+    /* padding: 15px 0; */
 }
 
 nav ul li a {
@@ -87,10 +87,13 @@ nav ul li a {
     text-decoration: none;
     padding: 14px 16px;
     display: block;
+    transition: background-color 0.8s, color 0.8s;
+
 }
 
 nav ul li a:hover {
     background-color: #575757;
+    color: var(--color3);
 }
 
 /* home page style */
@@ -117,10 +120,11 @@ nav ul li a:hover {
     background-color: var(--color1);
 }
 
-.fade-in {
+main {
     opacity: 0;
-    animation: fadeIn ease 1s;
+    animation: fadeIn ease 0.25s;
     animation-fill-mode: forwards;
+    
 }
 
 @keyframes fadeIn {
