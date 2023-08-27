@@ -1,0 +1,58 @@
+/* General Layout Adjustments */
+body {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content on larger screens */
+    font-size: 18px; /* Increase the base font size slightly */
+}
+
+/* Navigation Adjustments */
+.nav-bar {
+    flex-direction: row; /* Display the nav links horizontally */
+    align-items: center;
+}
+
+.nav-bar ul {
+    display: flex; /* Use flexbox to layout list items horizontally */
+    list-style: none; /* Remove the default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-bar li {
+    margin: 0 1.5rem; /* Space out the list items */
+}
+
+.nav-bar li a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit;
+    transition: color 0.3s; /* Smooth transition for hover effects */
+}
+
+.nav-bar li a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+/* Adjustments for images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+section, article, aside {
+    margin: 2rem 1rem;
+}
+
+/* Adjustments for tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+}
