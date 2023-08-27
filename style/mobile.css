@@ -30,7 +30,9 @@ footer {
     align-items: center;
     background-color: var(--color1);
     color: var(--color2);
-    padding: 2em;
+    padding: 0.5em;
+    font-size: 0.8em;
+    line-height: 0.5em;
     margin-top: auto;
 }
 
@@ -220,10 +222,12 @@ nav ul li {
 /* images */
 
 img {
-    width: 25%;
+    max-width: 25%;
     height: auto;
     margin: 0 auto;
     display: block;
+    object-fit: cover; 
+    object-position: center;
     border-radius: 50%;
     border: var(--color3) dotted 4px;
  }
