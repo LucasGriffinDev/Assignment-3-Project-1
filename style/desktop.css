@@ -1,18 +1,43 @@
 /* General Layout Adjustments */
 body {
-    max-width: 1200px;
     margin: 0 auto; /* Center the content on larger screens */
     font-size: 18px; /* Increase the base font size slightly */
 }
 
 /* Navigation Adjustments */
+
+
 .nav-bar {
-    flex-direction: row; /* Display the nav links horizontally */
+    display: none;
+}
+
+.nav-bar {
+    position: static;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+    background-color: black;
+    padding: 1em 0;
+}
+
+.menu-container nav {
+    position: static;
+    max-height: none;
+    overflow-y: visible;
+}
+.menu-container nav ul {
+    flex-direction: row; /* This will display the list items in a row */
+}
+
+/* No need for the hover effect to display the menu, it will be always visible */
+.menu-container:hover nav {
+    max-height: none;
+    overflow-y: visible;
 }
 
 .nav-bar ul {
-    display: flex; /* Use flexbox to layout list items horizontally */
+    display: flex; 
+    flex-direction: row;
     list-style: none; /* Remove the default list styling */
     padding: 0; /* Remove default padding */
 }
@@ -29,6 +54,8 @@ body {
 
 .nav-bar li a:hover {
     color: #007BFF; /* Change color on hover */
+    background-color: beige;
+
 }
 
 /* Adjustments for images */

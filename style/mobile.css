@@ -24,16 +24,14 @@ main {
 }
 
 footer {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--color1);
     color: var(--color2);
-    position: relative;
-    width: 100%;
-    bottom: 0;
+    padding: 2em;
+    margin-top: auto;
 }
 
 /* Primary Color: Headings */
@@ -139,7 +137,7 @@ nav ul li a:hover {
 
 main {
     opacity: 0;
-    animation: fadeIn ease 0.25s;
+    animation: fadeIn ease 0.5s;
     animation-fill-mode: forwards;
     
 }
