@@ -1,23 +1,8 @@
-:root {
-  --color1: #212529; /* Dark Grey - For text and header */
-  --color2: #f8f9fa; /* Light Grey - For background */
-  --color3: #007bff; /* Blue - For accent */
-  --nav-height: 5em;
-}
-
-/* General Layout Adjustments */
-body {
-  margin: 0 auto; /* Center the content on larger screens */
-  font-size: 18px; /* Increase the base font size slightly */
-}
+/* === Menu === */
 
 /* Navigation Adjustments */
-
 .nav-bar {
   display: none;
-}
-
-.nav-bar {
   position: static;
   flex-direction: row;
   justify-content: space-around;
@@ -31,11 +16,11 @@ body {
   max-height: none;
   overflow-y: visible;
 }
+
 .menu-container nav ul {
-  flex-direction: row; /* This will display the list items in a row */
+  flex-direction: row;
 }
 
-/* No need for the hover effect to display the menu, it will be always visible */
 .menu-container:hover nav {
   max-height: none;
   overflow-y: visible;
@@ -44,8 +29,8 @@ body {
 .nav-bar ul {
   display: flex;
   flex-direction: row;
-  list-style: none; /* Remove the default list styling */
-  padding: 0; /* Remove default padding */
+  list-style: none;
+  padding: 0;
 }
 
 .nav-bar li {
@@ -53,36 +38,46 @@ body {
 }
 
 .nav-bar li a {
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none;
   color: inherit;
-  transition: color 0.3s; /* Smooth transition for hover effects */
+  transition: color 0.3s;
 }
 
 .nav-bar li a:hover {
-  font-size: 12em;
   background-color: var(--color2);
 }
 
-/* adjustment for main/aside */
+/* === Web Typography === */
 
+:root {
+  --color1: #212529;
+  --color2: #f8f9fa;
+  --color3: #007bff;
+  --nav-height: 5em;
+}
+
+body {
+  font-size: 18px;
+}
+
+/* === Box Model and Visual Formatting === */
+
+/* Adjustment for main/aside */
 .content-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 2em 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
 }
 
 main {
-  flex: 1; /* Allows main to grow and take up available space */
+  flex: 1;
   max-width: 70%;
-  margin-top: 0; /* Resetting the margin-top as it was set in mobile CSS */
-
   margin: var(--nav-height) auto 0 auto;
 }
 
 aside {
   max-width: 25%;
-  margin-left: 5%; /* Spacing between main and aside */
+  margin-left: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,4 +116,16 @@ th,
 td {
   padding: 1rem;
   text-align: left;
+}
+
+/* === Liquid Page Layout === */
+
+body {
+  margin: 0 auto;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
