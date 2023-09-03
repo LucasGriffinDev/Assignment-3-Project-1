@@ -44,6 +44,12 @@
   overflow-y: scroll;
 }
 
+.menu-container nav ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 nav ul {
   display: flex;
   flex-direction: column;
@@ -69,7 +75,7 @@ nav ul li a:hover {
 
 :root {
   --color1: #212529;
-  --color2: #f8f9fa;
+  --color2: #f2f3f4;
   --color3: #007bff;
 }
 

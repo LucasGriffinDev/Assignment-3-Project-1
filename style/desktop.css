@@ -71,7 +71,8 @@ body {
 
 main {
   flex: 1;
-  max-width: 70%;
+  max-width: 1200px;
+  width: 80%;
   margin: var(--nav-height) auto 0 auto;
 }
 
